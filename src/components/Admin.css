@@ -1,0 +1,55 @@
+.admin-page {min-height:75vh;padding:80px 20px;background:radial-gradient(circle at 80% 10%,#361334,transparent 40%),#090b14;color:#f8f7fd}
+.admin-shell {width:min(1080px,100%);margin:auto}
+.admin-eyebrow {color:#46dfff;font-size:12px;letter-spacing:2px;font-weight:800}
+.admin-shell h1 {font-size:clamp(32px,5vw,60px);line-height:1.04;margin:12px 0 36px}
+.admin-shell h1 span {color:#ff4db5}
+.admin-panel {background:#121523;border:1px solid #46dfff55;padding:clamp(20px,4vw,40px);border-radius:20px;display:flex;flex-direction:column;gap:18px}
+.admin-panel h2{margin:0;font-size:24px}
+.admin-panel p{color:#b6bad1;line-height:1.6;margin:0}
+.admin-panel label{display:flex;flex-direction:column;gap:8px;color:#46dfff;font-size:12px;font-weight:800;letter-spacing:1px}
+.admin-panel input,.admin-panel select{width:100%;padding:14px 16px;border:1px solid #ffffff33;border-radius:12px;background:#0c0f1c;color:white;font-size:16px}
+.admin-panel input:focus,.admin-panel select:focus{outline:2px solid #ff4db5}
+.admin-panel button{cursor:pointer;border-radius:11px;padding:13px 18px;border:1px solid #ff4db555;background:linear-gradient(90deg,#ef438f,#b449a6);color:white;font-weight:800}
+.admin-panel button:disabled{opacity:.5;cursor:not-allowed}
+.admin-toolbar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.admin-panel .admin-logout{background:#292337}
+.admin-booking-list{display:flex;flex-direction:column;gap:12px}
+.admin-booking{display:grid;grid-template-columns:140px 1fr auto;align-items:center;gap:18px;padding:18px;border:1px solid #ffffff22;background:#171a2a;border-radius:12px}
+.admin-booking strong{font-size:18px;white-space:nowrap}
+.admin-booking small{display:block;color:#a1a6be;margin-top:8px}
+.admin-booking b{font-size:17px}
+.admin-booking p{margin:6px 0;color:#c2c7d7}
+.admin-booking a{color:#46dfff}
+.admin-panel .admin-cancel{background:transparent;border:1px solid #ff4db566;color:#ff99ce}
+.admin-error{color:#ff8aa0;margin-top:16px}
+.admin-note{color:#a1a6be;font-size:12px;margin-top:20px;line-height:1.6}
+@media(max-width:640px){.admin-page{padding:50px 14px}.admin-booking{grid-template-columns:1fr;gap:14px}.admin-booking .admin-cancel{width:100%}}
+/* V2 additions; preserves Admin V1 neon styling */
+.admin-tabs,.admin-switch,.admin-date-nav{display:flex;gap:8px;flex-wrap:wrap}
+.admin-tabs{padding:10px 0;border-top:1px solid #ffffff20;border-bottom:1px solid #ffffff20}
+.admin-panel .admin-tabs button,.admin-panel .admin-switch button,.admin-panel .admin-date-nav button{background:#22283b;border:1px solid #ffffff20;font-size:13px}
+.admin-panel .admin-tabs .admin-tab-active,.admin-panel .admin-switch .admin-tab-active{background:#a82a7c;border-color:#ff4db5}
+.admin-date-row{display:flex;justify-content:space-between;gap:12px;align-items:end;flex-wrap:wrap}
+.admin-section{display:flex;flex-direction:column;gap:16px}
+.admin-section h3{font-size:22px;margin:0;color:#ff89cd}
+.admin-section h4{margin:4px 0;color:#e2eaff}
+.admin-week{display:grid;gap:18px}
+.admin-day{background:#0c0f1c;padding:16px;border:1px solid #ffffff22;border-radius:14px}
+.admin-day .admin-booking{margin:8px 0}
+.admin-shifts{display:grid;gap:12px}
+.admin-shift{display:grid;grid-template-columns:minmax(95px,1.2fr) 70px minmax(100px,1fr) minmax(100px,1fr) auto;gap:12px;align-items:end;background:#0e1120;padding:14px;border-radius:13px;border:1px solid #ffffff20}
+.admin-shift strong{align-self:center}
+.admin-check{display:flex!important;align-items:center;flex-direction:row!important;gap:10px!important;color:#f4f4fa!important;letter-spacing:0!important;text-transform:none!important;font-size:14px!important;font-weight:500!important}
+.admin-check input{width:18px!important;flex-shrink:0;accent-color:#ff4db5}
+.admin-form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;align-items:end}
+.admin-form-grid>button{min-height:48px}
+.admin-block{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;border-radius:12px;background:#0c0f1c;border:1px solid #ffffff25}
+.admin-panel .admin-block button{background:#31243c}
+.admin-service-field{grid-column:1/-1;border:1px solid #46dfff55;padding:14px;border-radius:12px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.admin-service-field legend{color:#46dfff;font-size:12px;font-weight:800;padding:0 8px}
+.admin-total{grid-column:1/-1;color:#b9bed2}
+.admin-total strong{color:#ff89cd}
+.admin-success{color:#70ecbb;margin:14px 0}
+.admin-panel button:focus-visible{outline:2px solid #46dfff;outline-offset:3px}
+@media(max-width:750px){.admin-shift{grid-template-columns:repeat(2,minmax(0,1fr))}.admin-shift>strong{grid-column:1/-1}.admin-shift>button{grid-column:1/-1}}
+@media(max-width:560px){.admin-form-grid,.admin-service-field{grid-template-columns:1fr}.admin-form-grid>button,.admin-total,.admin-service-field{grid-column:1}.admin-date-row>label{width:100%}.admin-date-nav{width:100%}.admin-date-nav button{flex:1;padding:10px 4px}.admin-block{flex-wrap:wrap}}
