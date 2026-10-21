@@ -6,7 +6,7 @@ import './App.css'
 
 
 const faceLogoSrc = '/images/logo-face.png'
-const fullLogoSrc = '/images/logo-full.jpg'
+
 const linkedInUrl = 'https://www.linkedin.com/in/jovan-todorovic-5453a0420/'
 
 
