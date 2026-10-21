@@ -369,6 +369,9 @@ function Footer() {
           </div>
         </Link>
         <div className="footer-credit">
+          <Link to="/admin" className="admin-login-link">
+             ADMIN PRIJAVA ↗
+          </Link>
           <p>© {new Date().getFullYear()} Boki Frizer · Aerodromska 23/a · Kruševac</p>
           <p>
             Designed &amp; Developed by{' '}

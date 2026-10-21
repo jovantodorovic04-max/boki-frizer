@@ -1063,3 +1063,22 @@ main {
     text-align: center;
   }
 }
+.admin-login-link {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 8px 14px;
+  border: 1px solid rgba(70, 223, 255, 0.35);
+  border-radius: 8px;
+  color: #46dfff;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.admin-login-link:hover {
+  color: #fff;
+  border-color: #46dfff;
+  box-shadow: 0 0 15px rgba(70, 223, 255, 0.25);
+}
